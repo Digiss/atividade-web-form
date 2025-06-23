@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Servi-Lon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-page">
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <img src="./images/logo servilon preta.png" class="imglogo1" alt="Servi-Lon Logo">
+            </a>
+            <nav class="nav">
+                <a href="#Ínicio">Ínicio</a>
+                <a href="login.html" class="btn-secondary">Login</a>
+                <a href="cadastro.html" class="btn-primary">Cadastrar</a>
+            </nav>
+        </div>
+    </header>
+    <div class="auth-container">
+        <div class="auth-content">
+            <div class="auth-form-column">
+                <form class="auth-form">
+                    <h2>Criar Conta</h2>
+                    
+                    <div class="form-columns">
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="name">Nome Completo *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="cpf">CPF *</label>
+                                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="birthdate">Data de Nascimento *</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gender">Sexo *</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="female">Feminino</option>
+                                    <option value="other">Outro</option>
+                                    <option value="prefer-not-to-say">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="phone">Número de Telefone *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(11) 99999-9999" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-email">Confirmar Email *</label>
+                                <input type="email" id="confirm-email" name="confirm-email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="user-type">Tipo de Conta *</label>
+                                <select id="user-type" name="user-type" required>
+                                    <option value="">Selecione uma opção</option>
+                                    <option value="client">Cliente (Solicito serviços)</option>
+                                    <option value="provider">Prestador (Ofereco serviços)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-column">
+                            <div class="form-group">
+                                <label for="password">Senha *</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirm-password">Confirmar Senha *</label>
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="math-question-1">Quanto é 2 + 2? *</label>
+                                <input type="number" id="math-question-1" name="math-question-1" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="math-question-2">Quanto é 4 vezes 8? *</label>
+                                <input type="number" id="math-question-2" name="math-question-2" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </form>
+            </div>
+
+            <div class="auth-info-column">
+                <div class="auth-info-content">
+                    <div class="auth-info-logo">
+                        <a href="index.html" class="logo-link">
+                            <img src="./images/logo servilon preta.png" class="imglogo1" alt="Servi-Lon Logo">
+                        </a>
+                        <div class="auth-info-logo2">
+                            <h2>Precisa de um...</h2>
+                            <h2><span class="highlight2" id="rotating-text">Técnico?</span></h2>
+                        </div>
+                    </div>
+                    
+                    <p>Faça parte da maior plataforma de conexão entre clientes e prestadores de serviços do Brasil. Encontre profissionais qualificados ou ofereça seus serviços com segurança e confiança.</p>
+                    
+                    <div class="auth-stats">
+                        <div class="stat">
+                            <strong>1000+</strong>
+                            <span>Prestadores Ativos</span>
+                        </div>
+                        <div class="stat">
+                            <strong>5000+</strong>
+                            <span>Serviços Realizados</span>
+                        </div>
+                        <div class="stat">
+                            <strong>4.8★</strong>
+                            <span>Avaliação Média</span>
+                        </div>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">Aceito os <a href="#" class="highlight">termos de uso</a> e <a href="#" class="highlight">política de privacidade</a> *</label>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Quero receber novidades e promoções por email</label>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width">Criar Conta</button>
+
+                    <div class="auth-links">
+                        <p>Já tem uma conta? <a href="login.html" class="highlight">Faça login aqui</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-footer">
+        </div>
+    </div>
+
+    <script>
+        const words = [
+            "Serviço?",
+            "Azulejista?",
+            "Arquiteto?",
+            "Engenheiro?",
+            "Mecânico?",
+            "Eletricista?",
+            "Encanador?",
+            "Pintor?",
+            "Marceneiro?",
+            "Técnico?"
+        ];
+
+        const rotatingText = document.getElementById('rotating-text');
+        let currentIndex = 0;
+
+        function rotateWords() {
+            rotatingText.style.opacity = '0';
+            rotatingText.style.transform = 'translateY(-20px)';
+            
+            setTimeout(() => {
+                rotatingText.textContent = words[currentIndex];
+                rotatingText.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    rotatingText.style.opacity = '1';
+                    rotatingText.style.transform = 'translateY(0)';
+                }, 50);
+                
+                currentIndex = (currentIndex + 1) % words.length;
+            }, 300);
+        }
+
+        setInterval(rotateWords, 2000);
+    </script>
+</body>
+</html>
